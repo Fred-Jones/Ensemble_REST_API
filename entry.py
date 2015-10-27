@@ -1,3 +1,5 @@
+# Should make base class from which all modules inherit
+
 #
 # ###GENOME HELPER TEST
 # from GenomeHelper import GenomeHelper
@@ -7,14 +9,14 @@
 #
 #
 # ##GET ARCHIVE TEST
-# from Archive import Archive
+from Archive import Archive
 # from ComparativeGenomics import GetGentree
-# result = Archive.GetArchive().getArchiveById(id='ENSG00000157764')
-# print result.json()
-#
-# rs = Archive.GetArchive().getArchiveById('ENSG00000157764', type='xml')
-#
-# print rs.text
+result = Archive.GetArchive().getArchiveById(id='ENSG00000157764')
+print result.json()
+
+rs = Archive.GetArchive().getArchiveById('ENSG00000157764', type='xml')
+
+print rs.text
 
 ##POST ARCHIVE TEST
 # result = Archive.GetArchive().postArchiveById(type='json', data = ["ENSG00000157764", "ENSG00000248378"])
@@ -58,5 +60,7 @@
 ############## server = 'serverzzz'
 ############## print GetLookup.server
 
-from Information import GetInfo
-print GetInfo.GetInfo().printServer()
+# from Information import GetInfo
+# print GetInfo.GetInfo().printServer()
+
+# from ComparativeGenomics import Archive

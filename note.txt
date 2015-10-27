@@ -1,0 +1,5 @@
+TODO
+  All dirs should be deleted to leave only their files in the root dir
+
+All classes should inherit from the BaseE.py class
+Archive/Archive.py is working example
